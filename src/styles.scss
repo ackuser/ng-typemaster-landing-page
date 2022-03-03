@@ -32,3 +32,23 @@ h1,
 p {
     margin: 0;
 }
+
+h1 {
+    @extend .font-h1;
+    text-transform: uppercase;
+}
+
+h2 {
+    @extend .font-h2;
+    text-transform: uppercase;
+}
+
+h3 {
+    @extend .font-h3;
+    text-transform: uppercase;
+}
+
+p {
+    @extend .font-body;
+    color: $grey;
+}

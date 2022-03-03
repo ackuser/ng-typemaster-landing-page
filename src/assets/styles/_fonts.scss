@@ -17,8 +17,8 @@
 
 .font {
 
-    &-h-xl {
-        @include font(Barlow-Black, 38px, -.53px, 44px);
+    &-h1 {
+        @include font(Barlow-Black, 48px, 0, 48px);
 
         @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
             @include font(Barlow-Black, 56px, -.78px, 64px);
@@ -29,7 +29,7 @@
         }
     }
 
-    &-h-l {
+    &-h2 {
         @include font(Barlow-Black, 40px, -.42px, 48px);
 
         @media screen and (min-device-width: 768px) {
@@ -37,24 +37,12 @@
         }
     }
 
-    &-h-m {
-        @include font(Barlow-Black, 18px, -.18px, 32px);
-    }
-
-    &-h-s {
-        @include font(Barlow-Medium, 16px, 2.5px, 26px)
-    }
-
-    &-quote {
-        @include font(Barlow-Medium, 18px, .09px, 32px);
-
-        @media screen and (min-device-width: 1024px) {
-            @include font(Barlow-Medium, 20px, .11px, 35px);
-        }
+    &-h3 {
+        @include font(Barlow-Black, 24px, 0, 28px);
     }
 
     &-body {
-        @include font(Barlow-Medium, 16px, .09px, 28px);
+        @include font(Barlow-Medium, 16px, 0, 26px);
 
         @media screen and (min-device-width: 1024px) {
             @include font(Barlow-Medium, 18px, .1px, 32px);

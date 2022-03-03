@@ -1,3 +1,5 @@
+@import '_colors';
+
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -54,7 +56,12 @@
 
             &--2 {
                 width: 129px;
-                content: url("../assets/images/mobile/image-phone-and-keyboard.jpg");
+                background-image: url("../assets/images/mobile/image-phone-and-keyboard.jpg");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-color: $orange;
+                background-blend-mode: multiply;
+                opacity: .85;
             }
 
             &--3 {
