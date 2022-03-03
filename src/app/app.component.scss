@@ -18,74 +18,12 @@
     .header {
         grid-column: 1 / -1;
         grid-row: 1 / 2;
-        // width: 100%;
-        height: 48px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        &__tm {
-            background: #F16718;
-            width: 40px;
-            height: 40px;
-        }
-
-        .btn {
-            background: #E8EFF2;
-            width: 151px;
-            height: 48px;
-            border-radius: 8px;
-            text-align: center;
-            padding: 10px;
-        }
     }
 
 
     .content-top {
         grid-column: 1 / -1;
         grid-row: 2 / 3;
-        width: 100%;
-        height: 286px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-
-        &__title {
-            background: black;
-            width: 100%;
-            height: 96px;
-        }
-
-        &__description {
-            background: black;
-            width: 100%;
-            height: 78px;
-        }
-
-        &__fx {
-            width: 100%;
-            height: 48px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            .btn {
-                border-radius: 8px;
-
-                &--1 {
-                    background: #F16718;
-                    width: 150px;
-                    height: 48px;
-                }
-            }
-
-            .subtitle {
-                width: 128px;
-                height: 26px;
-                background: black;
-            }
-        }
     }
 
     .image {
@@ -97,18 +35,15 @@
         grid-row: 3 / 4;
         width: 372px;
         height: 331px;
-        background: rgb(150, 199, 100);
+        content: url("../assets/images/mobile/image-keyboard.jpg");
         margin-left: 0;
-        // position: absolute;
-        // left: 24px;
     }
 
-    .images__fx {
+    .fx {
         margin-top: 24px;
         grid-column: 1 / -1;
         grid-row: 4 / 5;
         height: 193px;
-        background: lightblue;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -118,87 +53,32 @@
             height: 193px;
 
             &--2 {
-                background: lightcoral;
                 width: 129px;
+                content: url("../assets/images/mobile/image-phone-and-keyboard.jpg");
             }
 
             &--3 {
-                background: lightpink;
                 width: 220px;
+                content: url("../assets/images/mobile/image-glass-and-keyboard.jpg");
             }
         }
 
     }
 
     .content-middle {
-        margin-top:76px;
+        margin-top: 76px;
         grid-column: 1 / -1;
         grid-row: 5 / 6;
-        width: 100%;
-        height: 236px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-
-        &__title {
-            background: black;
-            width: 100%;
-            height: 108px;
-        }
-
-        &__description {
-            background: black;
-            width: 100%;
-            height: 104px;
-        }
     }
 
-    .cards{
+    .cards {
         grid-column: 1 / -1;
         grid-row: 6 / 7;
         margin: 47px auto 32px auto;
-
-        .card{
-            margin-bottom: 64px;
-            width: 327px;
-            height: 297px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-
-            &__icon{
-                width: 65px;
-                height: 65px;
-                background: pink;
-            }
-
-            &__title{
-                width: 100%;
-                height: 56px;
-                background: lightgoldenrodyellow;
-            }
-
-            &__description{
-                width: 100%;
-                height: 104px;
-                background: lightyellow;
-            }
-        }
     }
 
     .content-bottom {
         grid-column: 1 / -1;
         grid-row: 7 / 8;
-        display: flex;
-        justify-content: center;
-        
-        .subtitle {
-            width: 100%;
-            height: 26px;
-            background: lightseagreen;
-            text-align: center;
-        }
     }
 }

@@ -1,0 +1,70 @@
+@import '_colors';
+
+:host {
+    width: 327px;
+    height: 297px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 64px;
+
+    .icon {
+        width: 65px;
+        height: 65px;
+        border-radius: 16px;
+        background: $orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__svg {
+            background-repeat: no-repeat;
+        }
+    }
+
+    .title {
+        width: 100%;
+        height: 56px;
+    }
+
+    .description {
+        width: 100%;
+        height: 104px;
+    }
+}
+
+
+:host-context(.card--1) {
+    .icon__svg {
+        background: url("../../assets/images/shared/icon-compatible.svg");
+        width: 21px;
+        height: 26px;
+    }
+}
+
+:host-context(.card--2) {
+    .icon__svg {
+        background: url("../../assets/images/shared/icon-bluetooth.svg");
+        width: 19px;
+        height: 28px;
+    }
+
+}
+
+:host-context(.card--3) {
+    .icon__svg {
+        background: url("../../assets/images/shared/icon-battery.svg");
+        width: 32px;
+        height: 21px;
+    }
+}
+
+
+:host-context(.card--4) {
+    .icon__svg {
+        background: url("../../assets/images/shared/icon-light.svg");
+        width: 32px;
+        height: 32px;
+    }
+}
