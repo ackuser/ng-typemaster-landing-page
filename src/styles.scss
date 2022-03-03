@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+@import '_fonts';
+@import '_colors';
+// @import '_grid';
+// @import '_layout';
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    @extend .font-body;
+    margin: 0;
+}
+
+html,
+body {
+    // overflow-x: hidden;
+    // background: $cream-white;
+}
+
+app-root {
+    min-height: 100vh;
+}
+
+h1,
+p {
+    margin: 0;
+}

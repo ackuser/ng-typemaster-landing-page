@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Barlow-Medium';
+    src: url('../fonts/Barlow-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Barlow-Black';
+    src: url('../fonts/Barlow-Black.ttf') format('truetype');
+}
+
+@mixin font($fontFamily, $fontSize, $letterSpacing, $lineHeight) {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    letter-spacing: $letterSpacing;
+    line-height: $lineHeight;
+}
+
+.font {
+
+    &-h-xl {
+        @include font(Barlow-Black, 38px, -.53px, 44px);
+
+        @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+            @include font(Barlow-Black, 56px, -.78px, 64px);
+        }
+
+        @media screen and (min-device-width: 1024px) {
+            @include font(Barlow-Black, 72px, -1px, 78px);
+        }
+    }
+
+    &-h-l {
+        @include font(Barlow-Black, 40px, -.42px, 48px);
+
+        @media screen and (min-device-width: 768px) {
+            @include font(Barlow-Black, 48px, -.5px, 56px);
+        }
+    }
+
+    &-h-m {
+        @include font(Barlow-Black, 18px, -.18px, 32px);
+    }
+
+    &-h-s {
+        @include font(Barlow-Medium, 16px, 2.5px, 26px)
+    }
+
+    &-quote {
+        @include font(Barlow-Medium, 18px, .09px, 32px);
+
+        @media screen and (min-device-width: 1024px) {
+            @include font(Barlow-Medium, 20px, .11px, 35px);
+        }
+    }
+
+    &-body {
+        @include font(Barlow-Medium, 16px, .09px, 28px);
+
+        @media screen and (min-device-width: 1024px) {
+            @include font(Barlow-Medium, 18px, .1px, 32px);
+        }
+    }
+
+    &-footer {
+        @include font(Barlow-Medium, 15px, 0, 32px);
+    }
+
+    &-btn {
+        @include font(Barlow-Black, 16px, -.16px, 32px);
+
+        @media screen and (min-device-width: 1024px) {
+            @include font(Barlow-Black, 17px, -.18px, 32px);
+        }
+
+        &-small {
+            @include font(Barlow-Black, 14px, -.14px, 24px);
+
+            @media screen and (min-device-width: 1024px) {
+                @include font(Barlow-Black, 16px, -.16px, 32px);
+            }
+
+        }
+    }
+
+    @media screen and (min-device-width: 768px) {}
+
+    @media screen and (min-device-width: 1024px) {}
+
+
+}
