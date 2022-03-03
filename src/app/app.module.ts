@@ -8,6 +8,7 @@ import { ContentBottomComponent } from './content-bottom/content-bottom.componen
 import { ContentMiddleComponent } from './content-middle/content-middle.component';
 import { CardComponent } from './card/card.component';
 import { CardsComponent } from './cards/cards.component';
+import { BtnComponent } from './btn/btn.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { CardsComponent } from './cards/cards.component';
     ContentMiddleComponent,
     CardComponent,
     CardsComponent,
+    BtnComponent,
   ],
   imports: [
     BrowserModule

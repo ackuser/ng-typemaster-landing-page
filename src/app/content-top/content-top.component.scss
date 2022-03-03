@@ -22,18 +22,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        .btn {
-            background: #F16718;
-            color: white;
-            border-radius: 8px;
-            text-align: center;
-            padding: 10px;
-
-            &--1 {
-                width: 150px;
-                height: 48px;
-            }
         }
 
         .subtitle {
@@ -44,4 +32,4 @@
 
         }
     }
-}
+

@@ -1,0 +1,35 @@
+@import '_colors';
+
+$component: '.app-btn';
+
+#{$component} {
+    cursor: pointer;
+    width: 150px;
+    height: 48px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    // Color modifier
+    &--primary {
+        background: $orange;
+        color: $white;
+
+        &:hover {
+            background: $orange-light;
+        }
+    }
+
+    &--secondary {
+        background: $grey-light;
+        color: $blue;
+
+        &:hover {
+            background: $blue;
+            color: $white;
+        }
+    }
+}
