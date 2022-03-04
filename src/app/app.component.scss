@@ -3,7 +3,7 @@
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: min-content;
     justify-content: center;
     height: 307px;
     margin: 24px 24px 50px 24px;
@@ -11,21 +11,30 @@
     position: relative;
     height: 3007px;
 
-    .item {
-        // display: grid;
-        // justify-content: center;
-        // align-items: center;
+    @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+        height: 2128px;
+        grid-template-columns: repeat(8, 1fr);
+        margin: 40px 38px 42px 38px;
     }
+
+    @media screen and (min-device-width: 1024px) {}
 
     .header {
         grid-column: 1 / -1;
         grid-row: 1 / 2;
+        @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+            margin-bottom: 62px;
+        }
     }
 
 
     .content-top {
         grid-column: 1 / -1;
         grid-row: 2 / 3;
+
+        @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+            grid-column: 1 / 5;
+        }
     }
 
     .image {
@@ -39,6 +48,16 @@
         height: 331px;
         content: url("../assets/images/mobile/image-keyboard.jpg");
         margin-left: 0;
+
+        @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+            grid-column: 6 / -1;
+            grid-row: 2 / 3;
+            width: 478px;
+            height: 425px;
+            margin-bottom: 40px;
+            margin-left: -52px;
+        }
+
     }
 
     .fx {
@@ -51,8 +70,19 @@
         align-items: center;
         margin-left: -45px;
 
+        @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+            grid-row: 3 / 4;
+            height: 320px;
+            margin-top: unset;
+            margin-left: unset;
+        }
+
         .image {
             height: 193px;
+
+            @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+                height: 320px;
+            }
 
             &--2 {
                 width: 129px;
@@ -62,11 +92,19 @@
                 background-color: $orange;
                 background-blend-mode: multiply;
                 opacity: .85;
+
+                @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+                    width: 214px;
+                }
             }
 
             &--3 {
                 width: 220px;
                 content: url("../assets/images/mobile/image-glass-and-keyboard.jpg");
+
+                @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+                    width: 445px;
+                }
             }
         }
 
@@ -76,12 +114,22 @@
         margin-top: 76px;
         grid-column: 1 / -1;
         grid-row: 5 / 6;
+
+        @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+            grid-row: 4 / 5;
+            margin-top: 72px;
+        }
     }
 
     .cards {
         grid-column: 1 / -1;
         grid-row: 6 / 7;
         margin: 47px auto 32px auto;
+
+        @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+            margin: 142px auto;
+            grid-row: 5 / 6;
+        }
     }
 
     .content-bottom {

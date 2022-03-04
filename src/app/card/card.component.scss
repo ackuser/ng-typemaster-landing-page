@@ -9,6 +9,12 @@
     align-items: center;
     margin-bottom: 64px;
 
+    @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+        width: 281px;
+        height: 289px;
+        align-items: flex-start;
+    }
+
     .icon {
         width: 65px;
         height: 65px;
@@ -34,6 +40,19 @@
         height: 104px;
         text-align: center;
     }
+
+    @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+        .title,
+        .description {
+            text-align: start;
+        }
+
+        .title {
+            width: 75%;
+        }
+    }
+
+
 }
 
 

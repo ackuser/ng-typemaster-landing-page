@@ -30,11 +30,7 @@
     }
 
     &-h2 {
-        @include font(Barlow-Black, 40px, -.42px, 48px);
-
-        @media screen and (min-device-width: 768px) {
-            @include font(Barlow-Black, 48px, -.5px, 56px);
-        }
+        @include font(Barlow-Black, 32px, 0px, 36px);
     }
 
     &-h3 {

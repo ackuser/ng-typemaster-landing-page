@@ -6,9 +6,21 @@
     justify-content: space-between;
     align-items: center;
 
+
+    @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+        flex-direction: row;
+        // width: 100%;
+        flex-wrap: wrap;
+        height: 425px;
+    }
+
     .title {
         width: 100%;
         height: 96px;
+
+        @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+            // flex-basis: 100;
+        }
     }
 
     .description {
