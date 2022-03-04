@@ -13,7 +13,7 @@ $component: '.app-btn';
     text-transform: uppercase;
     font-weight: bold;
 
-    @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+    @media screen and (min-device-width: 768px) {
         width: 175px;
         height: 58px;
     }

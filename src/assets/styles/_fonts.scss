@@ -18,15 +18,7 @@
 .font {
 
     &-h1 {
-        @include font(Barlow-Black, 48px, 0, 48px);
-
-        @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
-            @include font(Barlow-Black, 56px, -.78px, 64px);
-        }
-
-        @media screen and (min-device-width: 1024px) {
-            @include font(Barlow-Black, 72px, -1px, 78px);
-        }
+        @include font(Barlow-Black, 48px, 0, 48px);    
     }
 
     &-h2 {
@@ -39,10 +31,6 @@
 
     &-body {
         @include font(Barlow-Medium, 16px, 0, 26px);
-
-        @media screen and (min-device-width: 1024px) {
-            @include font(Barlow-Medium, 18px, .1px, 32px);
-        }
     }
 
     &-footer {
@@ -51,24 +39,6 @@
 
     &-btn {
         @include font(Barlow-Black, 16px, -.16px, 32px);
-
-        @media screen and (min-device-width: 1024px) {
-            @include font(Barlow-Black, 17px, -.18px, 32px);
-        }
-
-        &-small {
-            @include font(Barlow-Black, 14px, -.14px, 24px);
-
-            @media screen and (min-device-width: 1024px) {
-                @include font(Barlow-Black, 16px, -.16px, 32px);
-            }
-
-        }
     }
-
-    @media screen and (min-device-width: 768px) {}
-
-    @media screen and (min-device-width: 1024px) {}
-
 
 }
