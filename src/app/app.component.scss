@@ -12,7 +12,7 @@
     height: 3007px;
 
     @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
-        height: 1870px;
+        height: 2128px;
         grid-template-columns: repeat(8, 1fr);
         margin: 40px 38px 42px 38px;
     }
@@ -80,7 +80,6 @@
             height: 480px;
             margin-bottom: 142px;
         }
-
     }
 
     .fx {
@@ -106,6 +105,7 @@
             height: 480px;
             margin-top: unset;
             margin-left: unset;
+            position: relative;
         }
 
         .image {
@@ -130,12 +130,14 @@
 
                 @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
                     width: 214px;
+                    background-image: url("../assets/images/tablet/image-phone-and-keyboard.jpg");
                 }
 
                 @media screen and (min-device-width: 1024px) {
                     width: 225px;
                     height: 480px;
-                    background-size: 110% 100%;
+                    background-image: url("../assets/images/desktop/image-phone-and-keyboard.jpg");
+                    background-size: 100% 100%;
                     margin-right: 30px;
                 }
             }
@@ -144,12 +146,42 @@
                 width: 220px;
                 content: url("../assets/images/mobile/image-glass-and-keyboard.jpg");
 
-                @media screen and (min-device-width: 1024px) {
+                @media screen and (min-device-width: 768px) {
                     width: 445px;
+                    content: url("../assets/images/tablet/image-glass-and-keyboard.jpg");
+                }
+
+                @media screen and (min-device-width: 1024px) {
+                    content: url("../assets/images/desktop/image-glass-and-keyboard.jpg");
                 }
             }
         }
+    }
 
+    .block {
+        width: 255px;
+        height: 240px;
+        background: $grey-light;
+        border-radius: 20px;
+        display: none;
+
+        @media screen and (min-device-width: 1024px) {
+            display: block;
+            position: absolute;
+
+
+            &--1 {
+                grid-row: 2 / 3;
+                right: -18%;
+                z-index: -1;
+                margin-left: 200px;
+            }
+
+            &--2 {
+                bottom: 0%;
+                left: -39%;
+            }
+        }
     }
 
     .content-middle {
@@ -175,7 +207,7 @@
         margin: 47px auto 32px auto;
 
         @media screen and (min-device-width: 768px) and (max-device-width: 1023px) {
-            margin: 142px auto;
+            margin: 142px auto 70px auto;
             grid-row: 5 / 6;
         }
 

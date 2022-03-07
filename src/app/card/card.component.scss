@@ -13,12 +13,14 @@
         width: 281px;
         height: 289px;
         align-items: flex-start;
+        margin-bottom: 72px;
     }
 
     @media screen and (min-device-width: 1024px) {
         width: 255px;
         height: 323px;
         align-items: baseline;
+        margin-bottom: 0px;
     }
 
     .icon {
@@ -60,7 +62,7 @@
 
     @media screen and (min-device-width: 1024px) {
         .description {
-            width: 97%;
+            width: 100%;
         }
     }
 

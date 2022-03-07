@@ -7,8 +7,16 @@
     @media screen and (min-device-width: 768px) {
         flex-direction: row;
         flex-wrap: wrap;
+
         &>* {
-            flex-basis: 20%;
+            flex-basis: 41%;
+        }
+    }
+
+    @media screen and (min-device-width: 1024px) {
+        flex-wrap: nowrap;
+        &>* {
+            margin-right: 30px;
         }
     }
 
